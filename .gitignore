@@ -1,24 +1,17 @@
-# Compiled class file
-*.class
+ public static void main(String[] args) {
+int[] arreglo = {10, 5, 8, 3, 2, 7};
+        int menor = arreglo[0]; // Inicializar con el primer elemento del arreglo
 
-# Log file
-*.log
+        for (int i = 1; i < arreglo.length; i++) {
+            if (arreglo[i] < menor) {
+                menor = arreglo[i]; // Actualizar si se encuentra un elemento menor
+            }
+        }
 
-# BlueJ files
-*.ctxt
+        System.out.println("El menor elemento del arreglo es: " + menor);
+    }
+}
 
-# Mobile Tools for Java (J2ME)
-.mtj.tmp/
+    
 
-# Package Files #
-*.jar
-*.war
-*.nar
-*.ear
-*.zip
-*.tar.gz
-*.rar
 
-# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
-hs_err_pid*
-replay_pid*
